@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "AddData";
+}
+
+<center>
+    <h1>Add Data Example:</h1>
+    <hr />
+    <form asp-action="AddData" method="post">
+        <table>
+            <tr>
+                <th>Flower Name: </th>
+                <td><input type="text" name="FlowerName" required /></td>
+            </tr>
+            <tr>
+                <th>Flower Type: </th>
+                <td><input type="text" name="FlowerType" required /></td>
+            </tr>
+            <tr>
+                <th>Flower Produced Date: </th>
+                <td>
+                    <input type="date" name="FlowerProducedDate" required />
+                </td>
+            </tr>
+            <tr>
+                <th>Flower Price: </th>
+                <td><input type="text" name="FlowerPrice" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="submit" value="Add Data to table" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+
